@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>shams Page </title>
+    <link rel="stylesheet" href="javajam.css" />
+    <style>
+      
+    </style>
+    <script>
+            function openDropdown(x){
+                var val="sub"+x;
+                var dis=document.getElementById(val).style.display;
+                if(dis=='block'){
+                    console.log("inside if true");
+                    
+                document.getElementById(val).style.display='none';
+                }else
+                {console.log("inside if false");
+                    
+                document.getElementById(val).style.display='block';}    
+            }
+            
+
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <header>
+            <h1>OGS Sharepoint WebApp</h1>
+        <div class="head"><button style="float: left;margin-left: 400px;"><a href="#passage1">TOP</a></button><button style="margin-left: 300px;"><a href="#passage4">BOTTOM</a></button></div>
+        </header>
+
+        <div class="nav_bar">
+            <nav>
+                <ul>
+                    <li class="outside" > <a href="#passage1" style="color: white;">Northeastern</a> </li>
+                    <li class="outside" > <a href="#passage2" class="dropbtn" style="color: white;" onclick="openDropdown(1)">Boston</a>
+                        <div class="dropdown-content" id="sub1">
+                             <a  style="color: white;" href="#passage2_first">Geography</a><br>
+                            <a style="color: white;" href="#boston_second">Sports</a>
+                        </div>
+                    </li>
+                    <li class="outside" ><a   onclick="openDropdown(2)" style="color: white;" href="#passage3">Massachusetts</a>
+                        <div class="dropdown-content" id="sub2">
+                            <a  style="color: white;" href="#passage3_first">Education</a>   
+                       </div>
+                    </li>
+                    <li class="outside" > <a   onclick="openDropdown(3)" style="color: white;" href="#passage4">U.S. state</a>
+                        <div class="dropdown-content" id="sub3">
+                             <a  style="color: white;" href="#passage4_first">Background</a><br>
+                            <a  style="color: white;" href="#passage4_second">Origins of states' names</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <main id="hero">
+            <div id="passage1">
+                <h3>
+                    Northeastern University
+                </h3>
+                <p>
+                    Northeastern University (NU or NEU) is a private research university in Boston, Massachusetts,
+                    established in 1898. It is categorized as an R1 institution (Doctoral Universities: Highest Research
+                    Activity) by the Carnegie Classification of Institutions of Higher Education. The university offers
+                    undergraduate and graduate programs on its main campus in Boston. The university has satellite
+                    campuses in Charlotte, North Carolina; Seattle, Washington; San Jose, California; and Toronto,
+                    Canada, that exclusively offer graduate degrees. Northeastern recently purchased the New College of
+                    the Humanities in London and plans to open an additional campus in Vancouver, Canada. The
+                    university's enrollment is approximately 18,000 undergraduate students and 8,000 graduate students
+                </p>
+            </div>
+
+            <div id="passage2">
+                <h3>
+                    boston city
+                </h3>
+                <p>
+                    Boston (UK: /ˈbɒstən/, US: /ˈbɔːstən/)[8] is the capital and most populous city[9] of the
+                    Commonwealth of Massachusetts in the United States, and the 21st most populous city in the United
+                    States. The city proper covers 49 square miles (127 km2) with an estimated population of 694,583 in
+                    2018, also making it the most populous city in New England. Boston is the seat of Suffolk County as
+                    well, although the county government was disbanded on July 1, 1999. The city is the economic and
+                    cultural anchor of a substantially larger metropolitan area known as Greater Boston, a metropolitan
+                    statistical area (MSA) home to a census-estimated 4.8 million people in 2016 and ranking as the
+                    tenth-largest such area in the country. As a combined statistical area (CSA), this wider commuting
+                    region is home to some 8.2 million people, making it the sixth most populous in the United States.
+                </p>
+                <h5 id="passage2_first">Geography</h5>
+                <p>Boston has an area of 89.63 square miles (232.1 km2)—48.4 square miles (125.4 km2) (54%) of land and
+                    41.2 square miles (106.7 km2) (46%) of water. The city's official elevation, as measured at Logan
+                    International Airport, is 19 ft (5.8 m) above sea level.[87] The highest point in Boston is Bellevue
+                    Hill at 330 feet (100 m) above sea level, and the lowest point is at sea level.[88] Situated onshore
+                    of the Atlantic Ocean, Boston is the only state capital in the contiguous United States with an
+                    oceanic shoreline.</p>
+
+                <h5 id="boston_second">Sports</h5>
+                <p>Boston has teams in the four major North American professional sports leagues plus Major League
+                    Soccer, and, as of 2019, has won 39 championships in these leagues. It is one of seven cities (along
+                    with Chicago, Detroit, Los Angeles, New York, Philadelphia and St. Louis) to have won championships
+                    in all four major sports. It has been suggested[227][228][229] that Boston is the new "TitleTown,
+                    USA", as the city's professional sports teams have won twelve championships since 2001: Patriots
+                    (2001, 2003, 2004, 2014, 2016 and 2018), Red Sox (2004, 2007, 2013, and 2018), Celtics (2008), and
+                    Bruins (2011). This love of sports made Boston the United States Olympic Committee's choice to bid
+                    to hold the 2024 Summer Olympic Games, but the city cited financial concerns when it withdrew its
+                    bid on July 27, 2015</p>
+
+            </div>
+            <div id="passage3">
+                <h3>Massachusetts</h3>
+                <p>Massachusetts (/ˌmæsəˈtʃuːsɪts/ (About this soundlisten), /-zɪts/), officially known as the
+                    Commonwealth of Massachusetts, is the most populous state in the New England region of the
+                    northeastern United States. It borders on the Atlantic Ocean to the east, the states of Connecticut
+                    and Rhode Island to the south, New Hampshire and Vermont to the north, and New York to the west. The
+                    state is named after the Massachusett tribe, which once inhabited the east side of the area, and is
+                    one of the original thirteen states. The capital of Massachusetts is Boston, which is also the most
+                    populous city in New England. Over 80% of the population of Massachusetts lives in the Greater
+                    Boston metropolitan area, a region influential upon American history, academia, and industry.
+                    Originally dependent on agriculture, fishing and trade, Massachusetts was transformed into a
+                    manufacturing center during the Industrial Revolution. During the 20th century, Massachusetts's
+                    economy shifted from manufacturing to services.[44] Modern Massachusetts is a global leader in
+                    biotechnology, engineering, higher education, finance, and maritime trade.</p>
+                <h5 id="passage3_first">Education</h5>
+                <p>In 2018, Massachusetts's overall educational system was ranked the top among all fifty U.S. states by
+                    U.S. News & World Report.[190] Massachusetts was the first state in North America to require
+                    municipalities to appoint a teacher or establish a grammar school with the passage of the
+                    Massachusetts Education Law of 1647,[191] and 19th century reforms pushed by Horace Mann laid much
+                    of the groundwork for contemporary universal public education[192][193] which was established in
+                    1852.[122] Massachusetts is home to the oldest school in continuous existence in North America (The
+                    Roxbury Latin School, founded in 1645), as well as the country's oldest public elementary school
+                    (The Mather School, founded in 1639),[194] its oldest high school (Boston Latin School, founded in
+                    1635),[195] its oldest continuously operating boarding school (The Governor's Academy, founded in
+                    1763),[196] its oldest college (Harvard University, founded in 1636),[197] and its oldest women's
+                    college (Mount Holyoke College, founded in 1837)</p>
+            </div>
+            <div id="passage4">
+                <h3>U.S. state</h3>
+                <p>In the United States, a state is a constituent political entity, of which there are currently 50. Bound together in a political union, each state holds governmental jurisdiction over a separate and defined geographic territory and shares its sovereignty with the federal government. Due to this shared sovereignty, Americans are citizens both of the federal republic and of the state in which they reside. State citizenship and residency are flexible, and no government approval is required to move between states, except for persons restricted by certain types of court orders (such as paroled convicts and children of divorced spouses who are sharing custody).</p>
+                <h5 id="passage4_first">Background</h5>
+                <p>
+                    The 13 original states came into existence in July 1776, a year after the start of the American Revolutionary War, upon agreeing to the Lee Resolution[8] and signing the United States Declaration of Independence. Prior to these events each state had been a British colony; each then joined the first Union of states between 1777 and 1781, upon ratifying the Articles of Confederation, the first U.S. constitution. Also during this period, the newly independent states developed their own individual state constitutions, among the earliest written constitutions in the world.[12] Although different in detail, these state constitutions shared features that would be important in the American constitutional order: they were republican in form, and separated power among three branches, most had bicameral legislatures, and contained statements of, or a bill of rights. Later, from 1787 to 1790, each of the states also ratified a new federal frame of government in the Constitution of the United States.
+                </p>
+                <h5 id="passage4_second">Origins of states' names</h5>
+                <p>
+                    The 50 states have taken their names from a wide variety of languages. Twenty-four state names originate from Native American languages. Of these, eight are from Algonquian languages, seven are from Siouan languages, three are from Iroquoian languages, one is from Uto-Aztecan languages and five others are from other indigenous languages. Hawaii's name is derived from the Polynesian Hawaiian language.
+                </p>
+            </div>
+        </main>
+        <footer>
+            Copyright &copy; 2019 shams alam naimi<br>
+            <a href="mailto:naimi.s@husky.neu.edu?Subject=your OGS project">naimi.s@husky.neu.edu</a>
+        </footer>
+    </div>
+</body>
+
+</html>
